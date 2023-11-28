@@ -26,6 +26,7 @@
 		3B7E528B2B14B06D007E2829 /* CommonHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E528A2B14B06D007E2829 /* CommonHeaderView.swift */; };
 		3B7E528D2B14B135007E2829 /* CommonGuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E528C2B14B135007E2829 /* CommonGuideView.swift */; };
 		3B7E528F2B14B1C8007E2829 /* GuidData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E528E2B14B1C8007E2829 /* GuidData.swift */; };
+		3B7E52932B15FF61007E2829 /* GuideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7E52922B15FF61007E2829 /* GuideView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		3B7E528A2B14B06D007E2829 /* CommonHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonHeaderView.swift; sourceTree = "<group>"; };
 		3B7E528C2B14B135007E2829 /* CommonGuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonGuideView.swift; sourceTree = "<group>"; };
 		3B7E528E2B14B1C8007E2829 /* GuidData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidData.swift; sourceTree = "<group>"; };
+		3B7E52922B15FF61007E2829 /* GuideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				3B7E52782B149A23007E2829 /* CardView.swift */,
 				3B7E52852B14AA46007E2829 /* HeaderView.swift */,
 				3B7E52872B14ACF3007E2829 /* FooterView.swift */,
+				3B7E52922B15FF61007E2829 /* GuideView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				3B7E528D2B14B135007E2829 /* CommonGuideView.swift in Sources */,
 				3B7E52862B14AA46007E2829 /* HeaderView.swift in Sources */,
 				3B7E52882B14ACF3007E2829 /* FooterView.swift in Sources */,
+				3B7E52932B15FF61007E2829 /* GuideView.swift in Sources */,
 				3B67A33E2B10CBF400F80555 /* Honeymoon.xcdatamodeld in Sources */,
 				3B7E528F2B14B1C8007E2829 /* GuidData.swift in Sources */,
 				3B7E52772B14997C007E2829 /* TestData.swift in Sources */,
