@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct CardView: View {
-    // MARK: - プロパティー
+typealias CardViews = [CardView]
 
+struct CardView: View, Identifiable {
+    // MARK: - プロパティー
+    
+    var id  = UUID()
     var honeymoonData: DestinationData
 
     // MARK: - ボディー

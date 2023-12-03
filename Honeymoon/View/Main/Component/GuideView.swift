@@ -12,6 +12,7 @@ enum GuidItem: Int { case like, dismis, book}
 struct GuideView: View {
     // MARK: - プロパティー
     private var giuidView: GuidDatas
+    @Environment(\.dismiss) var dismis
 
     init() {
         self.giuidView = TestData.shrred.guidTestData
@@ -27,8 +28,7 @@ struct GuideView: View {
 
                 Text("Get Started")
                     .fontWeight(.black)
-                    .font(.largeTitle)
-                    .foregroundStyle(.pink)
+                    .modifier(TitleModeifire())
 
                 Text("ロマンチックなハネムーンに最適な目的地を見つけて選んでください")
                     .lineLimit(nil)
@@ -47,14 +47,10 @@ struct GuideView: View {
                 Spacer(minLength: 10)
 
                 Button {
-
+                    dismis()
                 } label: {
                     Text("continue".uppercased())
-                    .font(.headline)
-                    .padding()
-                    .frame(minWidth: 0, maxWidth: .infinity)
-                    .background(Capsule().fill(.pink))
-                    .foregroundStyle(.white)
+                        .modifier(FooterModeifire())
                 }
             }//: VStack
             .frame(minWidth: 0, maxWidth: .infinity)
