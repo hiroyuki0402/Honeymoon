@@ -9,6 +9,7 @@ import SwiftUI
 
 struct FooterView: View {
     // MARK: - プロパティー
+    @Binding var isShowBookingAlert: Bool
 
     // MARK: - ボディー
     var body: some View {
@@ -39,7 +40,7 @@ private extension FooterView {
 
     private var bookDestination: some View {
         Button {
-
+            isShowBookingAlert.toggle()
         } label: {
             Text("お気に入りを予約する")
                 .font(.system(.subheadline, design: .rounded))
@@ -62,5 +63,5 @@ private extension FooterView {
 }
 
 #Preview {
-    FooterView()
+    FooterView(isShowBookingAlert: .constant(false))
 }

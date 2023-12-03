@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HeaderView: View {
     // MARK: - プロパティー
+    @Binding var isShowGuidView: Bool
+    @Binding var isShowInfomation: Bool
 
     // MARK: - ボディー
     var body: some View {
@@ -34,11 +36,14 @@ private extension HeaderView {
     /// インフォメーションボタン
     private var informationButton: some View {
         Button {
-
+            isShowInfomation.toggle()
         } label: {
             Image(systemName: "info.circle")
                 .font(.system(size: 24, weight: .regular))
         }
+        .sheet(isPresented: $isShowInfomation, content: {
+            InfomationView()
+        })
         .tint(.primary)
     }
 
@@ -52,15 +57,18 @@ private extension HeaderView {
     /// ガイドボタン
     private var guaidButton: some View {
         Button {
-
+            isShowGuidView.toggle()
         } label: {
             Image(systemName: "questionmark.circle")
                 .font(.system(size: 24, weight: .regular))
         }
         .tint(.primary)
+        .sheet(isPresented: $isShowGuidView, content: {
+            GuideView()
+        })
     }
 }
 
 #Preview {
-    HeaderView()
+    HeaderView(isShowGuidView: .constant(false), isShowInfomation: .constant(false))
 }
