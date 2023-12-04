@@ -46,5 +46,5 @@ struct CommonGuideView: View {
 }
 
 #Preview {
-    CommonGuideView(guidData: TestData.shrred.guidTestData[0])
+    CommonGuideView(guidData: TestData.shared.guidTestData[0])
 }

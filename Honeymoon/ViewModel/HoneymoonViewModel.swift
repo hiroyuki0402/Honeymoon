@@ -11,7 +11,7 @@ class HoneymoonViewModel: ObservableObject {
     @Published var destinationDatas: DestinationDatas = []
 
     init() {
-        destinationDatas = TestData.shrred.honeymoonTestData
+        destinationDatas = TestData.shared.honeymoonTestData
     }
 
     func getDestinationData(at index: Int) -> DestinationData {

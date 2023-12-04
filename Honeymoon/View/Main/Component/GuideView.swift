@@ -15,7 +15,7 @@ struct GuideView: View {
     @Environment(\.dismiss) var dismis
 
     init() {
-        self.giuidView = TestData.shrred.guidTestData
+        self.giuidView = TestData.shared.guidTestData
     }
 
     // MARK: - ボディー

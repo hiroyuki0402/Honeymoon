@@ -8,7 +8,7 @@
 import Foundation
 
 class TestData {
-    static let shrred = TestData()
+    static let shared = TestData()
 
     let honeymoonTestData: [DestinationData] = [
         DestinationData(
