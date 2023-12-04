@@ -31,6 +31,9 @@
 		3B9495E82B1C6D5B0053A8E2 /* TitleModeifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9495E72B1C6D5B0053A8E2 /* TitleModeifire.swift */; };
 		3B9495EA2B1C6F340053A8E2 /* FoterModeifire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9495E92B1C6F340053A8E2 /* FoterModeifire.swift */; };
 		3B9495EC2B1C720D0053A8E2 /* RowAppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9495EB2B1C720D0053A8E2 /* RowAppInfoView.swift */; };
+		3B94960D2B1DE0D70053A8E2 /* SymbolModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94960C2B1DE0D70053A8E2 /* SymbolModifier.swift */; };
+		3B94960F2B1DE2D50053A8E2 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B94960E2B1DE2D50053A8E2 /* PlaySound.swift */; };
+		3B9496122B1DE3200053A8E2 /* AnyTransition-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9496112B1DE3200053A8E2 /* AnyTransition-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +63,9 @@
 		3B9495E72B1C6D5B0053A8E2 /* TitleModeifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleModeifire.swift; sourceTree = "<group>"; };
 		3B9495E92B1C6F340053A8E2 /* FoterModeifire.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoterModeifire.swift; sourceTree = "<group>"; };
 		3B9495EB2B1C720D0053A8E2 /* RowAppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowAppInfoView.swift; sourceTree = "<group>"; };
+		3B94960C2B1DE0D70053A8E2 /* SymbolModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SymbolModifier.swift; sourceTree = "<group>"; };
+		3B94960E2B1DE2D50053A8E2 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		3B9496112B1DE3200053A8E2 /* AnyTransition-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyTransition-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +98,7 @@
 		3B67A3302B10CBF300F80555 /* Honeymoon */ = {
 			isa = PBXGroup;
 			children = (
+				3B9496102B1DE3170053A8E2 /* Extension */,
 				3B67A3312B10CBF300F80555 /* HoneymoonApp.swift */,
 				3B67A3332B10CBF300F80555 /* ContentView.swift */,
 				3B5B434B2B10CFC4004F9570 /* Info.plist */,
@@ -99,6 +106,7 @@
 				3B67A3442B10CC6D00F80555 /* View */,
 				3B7E527A2B149A48007E2829 /* ViewModel */,
 				3B67A3452B10CC8300F80555 /* Supporting */,
+				3B7E52752B149970007E2829 /* Util */,
 				3B67A3372B10CBF400F80555 /* Preview Content */,
 				3B67A33C2B10CBF400F80555 /* Honeymoon.xcdatamodeld */,
 			);
@@ -146,7 +154,6 @@
 		3B7E52712B14986A007E2829 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3B7E52752B149970007E2829 /* Util */,
 				3B7E52742B14992D007E2829 /* Data */,
 			);
 			path = Model;
@@ -165,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				3B7E52762B14997C007E2829 /* TestData.swift */,
+				3B94960E2B1DE2D50053A8E2 /* PlaySound.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -213,8 +221,17 @@
 			children = (
 				3B9495E72B1C6D5B0053A8E2 /* TitleModeifire.swift */,
 				3B9495E92B1C6F340053A8E2 /* FoterModeifire.swift */,
+				3B94960C2B1DE0D70053A8E2 /* SymbolModifier.swift */,
 			);
 			path = Modifire;
+			sourceTree = "<group>";
+		};
+		3B9496102B1DE3170053A8E2 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3B9496112B1DE3200053A8E2 /* AnyTransition-Extension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +308,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B7E52792B149A23007E2829 /* CardView.swift in Sources */,
+				3B94960F2B1DE2D50053A8E2 /* PlaySound.swift in Sources */,
 				3B9495EC2B1C720D0053A8E2 /* RowAppInfoView.swift in Sources */,
 				3B7E52842B14A9D1007E2829 /* MainView.swift in Sources */,
 				3B7E528B2B14B06D007E2829 /* CommonHeaderView.swift in Sources */,
@@ -302,9 +320,11 @@
 				3B7E528D2B14B135007E2829 /* CommonGuideView.swift in Sources */,
 				3B7E52862B14AA46007E2829 /* HeaderView.swift in Sources */,
 				3B7E52882B14ACF3007E2829 /* FooterView.swift in Sources */,
+				3B94960D2B1DE0D70053A8E2 /* SymbolModifier.swift in Sources */,
 				3B7E52932B15FF61007E2829 /* GuideView.swift in Sources */,
 				3B67A33E2B10CBF400F80555 /* Honeymoon.xcdatamodeld in Sources */,
 				3B7E528F2B14B1C8007E2829 /* GuidData.swift in Sources */,
+				3B9496122B1DE3200053A8E2 /* AnyTransition-Extension.swift in Sources */,
 				3B7E52772B14997C007E2829 /* TestData.swift in Sources */,
 				3B67A3322B10CBF300F80555 /* HoneymoonApp.swift in Sources */,
 				3B9495E52B1C6C4C0053A8E2 /* InfomationView.swift in Sources */,

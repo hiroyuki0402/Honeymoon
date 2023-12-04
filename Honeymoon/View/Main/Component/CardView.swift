@@ -53,8 +53,6 @@ struct CardView: View, Identifiable {
                 .padding(.bottom, 50),
                 alignment: .bottom
             )
-
-
     }//: ボディー
 }
 
